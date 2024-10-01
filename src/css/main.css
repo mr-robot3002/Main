@@ -1,0 +1,130 @@
+body{
+	background-color: #00ddfa;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	background-size: cover;
+}
+
+#picture{
+	
+	background-image: url(https://images.unsplash.com/photo-1556379092-dca659792591?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
+
+}
+
+.pic1{
+	height: 1000px;
+}
+
+.main-text{
+	color:red;
+}
+
+.Cool{
+	color: green;
+}
+#some-id{
+	color: yellow;
+}
+div i{
+	color: darkcyan;
+}
+
+.link{
+	color:red;
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+.link:hover{
+	color:green;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link:active{
+	text-decoration: line-through;
+}
+.link:visited{
+	color: grey;
+}
+
+input {color: green}
+input:focus {color: blue}
+
+p.text:not(:empty) {
+	color: darkblue;
+}
+
+.center{
+	text-align: center;
+}
+
+.new-text{
+	color: #15077a;
+	text-align: center;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: bold;
+	word-spacing: 20px;
+	letter-spacing: 2px;
+	line-height: 25px;
+	cursor: copy;
+}
+/*
+.block{
+	background: red;
+	height: 200px;
+	width: 200px;
+	border: 5px solid darkgoldenrod;  толщина-тип-цвет 
+	border-top-color:black ;
+	border-top-style: dotted ;
+
+	border-radius: 25px 30% 100px;
+	opacity: 0.7;  прозрачность 
+	margin: 50px 20px;  отступы по краям(можно добавлять к определенной стороне) 
+	padding: 10px;
+
+
+
+}
+*/
+.block1{
+	background: black;
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+}
+.block{
+	background: black;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+}
+
+
+
+#first{
+	float: left;
+}
+
+#second{
+	height: 100px;
+	width: 80%;
+	margin: 20px;
+	float: left;
+	background: grey;
+	border: white 3px;
+	border-radius: 15px;
+	text-align: center;
+	margin: 50px;
+}
+
+#third{
+	float: right;
+}
+
