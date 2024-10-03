@@ -1,10 +1,16 @@
 import React from 'react';
 import axios from 'axios';
-import { Link } from "react-router-dom";
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Link, Navigate} from "react-router-dom";
 import setCookie from '../Cookie/Set_Cookie';
 import getCookie from '../Cookie/Get_Cookie';
 import deleteCookie from '../Cookie/Delete_Cookie';
+
+function isAuth() {
+  if (getCookie('token') != '')
+    return true;
+  else
+    return false; 
+}
 
 export class Enter extends React.Component {
     state = {
@@ -52,11 +58,14 @@ export class Enter extends React.Component {
       })
       .then(res => {
         const Token = res.data.token;
+        const Data = JSON.stringify({'token': Token}) // можно отправлять в куки словарь серелизованый в json формат
         setCookie('token', Token, {secure: true, 'max-age': 2592000})
         //console.log(res);
         //console.log(res.data.token);
         console.log(getCookie('token'))
+        window.location.href = "/main"
       })
+      
     }
     
     render() {
@@ -69,7 +78,7 @@ export class Enter extends React.Component {
               Password:
               <input type="password" name="password" onChange={this.handleChange2} /><br></br>
               </label>
-            <button type="submit">Войти</button>
+              <button type="submit" >Войти</button>
           </form>
           <li>
               <Link to="/">Home</Link>
@@ -78,6 +87,7 @@ export class Enter extends React.Component {
       )
     }
   }
+  
 
 export default function Enter_Blok() {
   return <div><Enter /></div>;

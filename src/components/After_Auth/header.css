@@ -1,0 +1,395 @@
+#regent {
+	line-style: none;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-bottom: 10px;
+	line-height: 5px;
+	position: absolute;
+	top: 10px;
+	right: 3%;
+}
+#regent li{
+    display:inline-block;
+    margin-right: 5px;
+}
+
+.Header {
+	width: 100%;
+	height: 84px;
+	text-align: center;
+	background: #ffffff;
+	/*opacity: 0.7;*/
+
+	color: black;
+	line-height: 80px;
+	margin-bottom: 0px;
+	float: left;
+
+}
+
+#Logo {
+    /* logo */
+	position: absolute;
+	width: 132px;
+	height: 21.41px;
+	left: 80px;
+	top: 34px;
+	/* Автолейаут */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+
+	
+	color: rgb(33, 37, 41);
+	font-family: Inter;
+	font-size: 16.2px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+
+	
+}
+
+#Logo #voron {
+	/* фрейм 8 */
+	position: static;
+	width: 60.7px;
+	height: 20px;
+	/* Автолейаут */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 5.35px 0px 5.35px;
+
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 0px;
+
+	border-radius: 13.92px;
+	/* blue */
+	background: rgb(51, 133, 250);
+
+	color: rgb(33, 37, 41);
+	font-family: Inter;
+	font-size: 16.2px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+#Logo #script{
+	position: static;
+	width: 70.7px;
+	height: 20px;
+	/* Автолейаут */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 5.35px 0px 0px;
+
+
+
+	color: rgb(33, 37, 41);
+	font-family: Inter;
+	font-size: 16.2px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#line {
+	/* Линия 1 */
+	position: absolute;
+	height: 0;
+	left: 80px;
+	right: 80px;
+	top: 84px;
+	border: 1px solid rgb(108, 117, 125);
+}
+
+#menu {
+	text-decoration: none;
+	position: absolute;
+	width: 82%;
+	height: 40px;
+	left: 270px;
+	right: 482px;
+	top: 5px;
+	/* Автолейаут */
+	display: flex;
+	flex-irection: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 12;
+	padding: 0px;
+
+	color: rgb(33, 37, 41);
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+#menu li{
+	/* фрейм 5 */
+	position: static;
+
+	height: 28px;
+	/* Автолейаут */
+	display: flex;
+	flex-direction: row;
+
+	gap: 10;
+	padding: 10px;
+
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 12px;
+	color: rgb(33, 37, 41);
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	justify-content: center;
+    align-items: center;
+	text-decoration: none;
+}
+
+#menu div{
+	/* фрейм 5 */
+	position: static;
+
+	height: 28px;
+	/* Автолейаут */
+	display: flex;
+	flex-direction: row;
+
+	gap: 10;
+	padding: 10px;
+
+
+	/* Inside Auto Layout */
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin-left: 50%;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	justify-content: center;
+    align-items: center;
+	text-decoration: none;
+}
+
+#menu div a {
+	color: rgb(248, 249, 250);
+	/* Цвет ссылок */
+  }
+#menu div a:visited {
+	color: rgb(248, 249, 250);
+	/* Цвет посещенных ссылок */
+  }
+#menu div a:active {
+	color: rgb(248, 249, 250);
+	/* Цвет активных ссылок */
+  }
+
+#menu div a:hover{
+	color: rgb(33, 37, 41);
+	transition: width 0.3s ease-out;
+}
+
+
+#menu li a {
+	color: rgb(33, 37, 41); /* Цвет ссылок */
+  }
+#menu li a:visited {
+	color: rgb(33, 37, 41); /* Цвет посещенных ссылок */
+  }
+#menu li a:active {
+	color: rgb(33, 37, 41); /* Цвет активных ссылок */
+  }
+
+#menu li a:hover{
+	color: rgb(51, 133, 250);
+	transition: width 0.3s ease-out;
+	text-decoration: underline;
+}
+
+#menu #generate_add{
+	/* create */
+
+	width: 174px;
+	height: 30px;
+	left: 200%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	/* Автолейаут */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10;
+	padding: 5px;
+
+	border-radius: 13px;
+	background: rgb(51, 133, 250);
+	text-decoration-color: #fff;
+}
+
+.account{
+	/* Эллипс 5 */
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 3px;
+	bottom: 0;
+	border-radius: 25px;
+	background: rgb(51, 133, 250);
+}
+
+
+
+#yakors {
+	line-style: none;
+	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+	line-height: 0px;
+	position: absolute;
+	top: 25px;
+	left: 20%;
+	font-family: "Manrope";
+	font-size: 20px;
+}
+
+#yakors li {
+	display: inline; /* Отображать как строчный элемент */
+    margin-right: 10px;
+    color: black;
+    font-family: "Manrope";
+}
+
+a {
+  text-decoration: none;
+}
+#yakors li a {
+  color: black; /* Цвет ссылок */
+}
+#yakors li a:visited {
+  color: black; /* Цвет посещенных ссылок */
+}
+#yakors li a:active {
+  color: black; /* Цвет активных ссылок */
+}
+
+#yakors li:hover{
+	color: #C4CAFF;
+  text-decoration: underline
+}
+
+.btn {
+	font-family: "Manrope";
+	text-decoration: none;
+	color: #6b5770;
+	background-image: linear-gradient(90deg, #fd7f34, #bd155b);
+	display: inline-block;
+	padding: 15px 15px;
+	border: 1px solid;
+	position: relative;
+	z-index: 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin: 0 10px 5px 0;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	color: #fff;
+}
+
+.btn:before {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	background: linear-gradient(90deg, #163c40, #163c40);
+	z-index: -2;
+	transition: .4s;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, #0f1212, #212336);
+	z-index: -1;
+	transition: .9s;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.btn:hover {
+	color: #fff;
+	transition: .3s;
+}
+
+.btn:hover:after {
+	background: linear-gradient(90deg, #212336, #163c40);
+}
+
+.btn:active:after {
+	background: linear-gradient(90deg, #d96d2d, #760f3a);
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px #fd7f34;
+}
+
+.btn:disabled {
+	pointer-events: none;
+}
+
+.btn:disabled:before {
+	filter: grayscale(100%);
+}
+
+
+
+
