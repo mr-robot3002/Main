@@ -34,7 +34,7 @@ export class IndustryForm extends React.Component {
         founding_date: this.state.founding_date
       };
       setCookie("industry", JSON.stringify(Industry));
-      axios.post(` http://127.0.0.1:8000/api/two_table/create_under_table/`, {
+      axios.post(` http://127.0.0.1:8000/api/two_table/create_under_table_advertisement/`, {
         token: getCookie("token"),
         adv_id: Industry['adv_id'],
         type_services: Industry['type_services'],
@@ -46,6 +46,7 @@ export class IndustryForm extends React.Component {
       )
         .then(res => {
           console.log(res);
+          setCookie('id_user', JSON.stringify(res.data));
         })
 
     }

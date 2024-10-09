@@ -20,7 +20,7 @@ export default function Main1() {
           Привет мир!
         </h1>
         {/* colums-i разбивает блок на i столбцов */}
-          <div className="flex flex-row w-52 p-3 columns-7 text-center font-inter font-bold">
+          <div className="flex flex-row w-27 p-3 columns-7 text-center font-inter font-bold">
             <div className="flex-1 bg-blue-600 rounded-full font-inter">VORON</div>
             <div className="flex-1 w-24 px-0.5 ">SCRIPT</div>
             <div className="flex-1 basis-1/2 ml-60 font-inter hover:underline hover:text-blue-600" ><a href="/main"  title="Главная" >ГЛАВНАЯ</a></div> 

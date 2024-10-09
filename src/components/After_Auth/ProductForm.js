@@ -36,7 +36,7 @@ export class ProductForm extends React.Component {
         details: this.state.details
       };
       setCookie("product", JSON.stringify(Product));
-      axios.post(` http://127.0.0.1:8000/api/two_table/create_under_table/`, {
+      axios.post(` http://127.0.0.1:8000/api/two_table/create_under_table_advertisement/`, {
         token: getCookie("token"),
         adv_id: Product['adv_id'],
         type_services: Product['type_services'],
@@ -48,6 +48,7 @@ export class ProductForm extends React.Component {
       )
         .then(res => {
           console.log(res);
+          setCookie('id_user', JSON.stringify(res.data));
         })
 
     }

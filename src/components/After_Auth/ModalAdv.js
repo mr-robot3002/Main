@@ -5,6 +5,12 @@ import setCookie from "../../Cookie/Set_Cookie";
 import getCookie from "../../Cookie/Get_Cookie";
 import { Link } from "react-router-dom";
 
+
+function String_url() {
+  const final_url = "http://localhost:3001/" + getCookie("adv_id") + '/' + getCookie("id_user");
+    window.location.href = final_url;
+};
+
 function GoToResult() {
   window.location.href = "/main/result"
 }
@@ -55,7 +61,7 @@ export default function ModalAdv(){
             <p>Вы подтверждаете данные?</p>
             <div>
               <form onSubmit={this.handleSubmit}>
-                <button type="submit">ДА</button>
+                <button type="submit" onClick={String_url}>ДА</button>
               </form>
             </div>
             <button onClick={closeModal}>Закрыть</button>
@@ -74,6 +80,7 @@ export default function ModalAdv(){
         <Modal 
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
+          ariaHideApp={false}
           style={customStyles}
         >
             {<Code />}

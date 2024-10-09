@@ -36,7 +36,7 @@ export class ProviderForm extends React.Component {
         skill_level: this.state.skill_level
       };
       setCookie("provider", JSON.stringify(Provider));
-      axios.post(` http://127.0.0.1:8000/api/two_table/create_under_table/`, {
+      axios.post(` http://127.0.0.1:8000/api/two_table/create_under_table_advertisement/`, {
         token: Provider['token'],
         adv_id: Provider['adv_id'],
         type_services: Provider['type_services'],
@@ -48,6 +48,7 @@ export class ProviderForm extends React.Component {
       )
         .then(res => {
           console.log(res);
+          setCookie('id_user', JSON.stringify(res.data));
         })
 
     }
