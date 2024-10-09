@@ -77,7 +77,7 @@ export class Enter extends React.Component {
               <input type="email" name="email" onChange={this.handleChange1} /><br></br>
               Password:
               <input type="password" name="password" onChange={this.handleChange2} /><br></br>
-              </label>
+            </label>
               <button type="submit" >Войти</button>
           </form>
           <li>

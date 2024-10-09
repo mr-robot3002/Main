@@ -5,15 +5,19 @@ import { BrowserRouter as Router, Route, Routes, Link, Outlet, Navigate } from '
 
 import './App.css';
 
-import Header from './components/Header';
-import Main1 from './components/Main1';
-import Registration from './components/Registration';
+
 import MainPage from './components/MainPage';
 import Enter_Blok from './components/Enter';
 import Registration_Blok from './components/Registration';
 import getCookie from './Cookie/Get_Cookie';
 import MainPageAuth from './components/After_Auth/MainPageAuth';
-import { Modal_Reg } from './components/Registration';
+//import Change from './components/After_Auth/Settings1';
+import Update from './components/After_Auth/Update';
+import Generation_Form1_Blok from './components/After_Auth/Generate_Form1';
+import ProviderForm_Blok from './components/After_Auth/ProviderForm';
+import ProductForm_Blok from './components/After_Auth/ProductForm';
+import IndustryForm_Blok from './components/After_Auth/IndustryForm';
+
 
 /*function isAuth() {
   if (getCookie('token') != '')
@@ -31,31 +35,27 @@ const PrivateRoute = () => {
 }
 
 export default function App() {
-  console.log(getCookie('token'))
-  const [isModal1, setModal1] = React.useState(true);
   return(
     <div>
       <section>
         <Router>
           <Routes>
-            <Route path="*" element={<Navigate to ="/" replace={true} />} />
+            <Route path="*" element={<Navigate to ="/main" replace={true} />} />
             {!!getCookie('token') ? (
               <>
                 <Route path="/main" element={<MainPageAuth />} />
-                <Route path="/main/settings" element={<MainPageAuth />} />
+                <Route path="/main/generate" element={<Generation_Form1_Blok />} />
+                <Route path="/main/generate/provider" element={<ProviderForm_Blok />} />
+                <Route path="/main/generate/product" element={<ProductForm_Blok/>} />
+                <Route path="/main/generate/industry" element={<IndustryForm_Blok />} />
+                <Route path="main/settings" element={<Update />} />
+                <Route path="/result" />
+                <Route path="/" element={<MainPage />} />
               </>
             ) : (
             <>
               <Route path="/Enter" element={<Enter_Blok />} />
               <Route path="/Regist" element={<Registration_Blok />} />
-              <Route path="/Regist/Regist1" element={
-                <Modal_Reg
-                  isVisible={isModal1}
-                  title="Подтверждение"
-                  content={<div>Подтверждение почты</div>}
-                  footer={<button>Отправить</button>}
-                  onClose={() => setModal1(false)}
-                />} />
               <Route path="/" element={<MainPage />} />
             </>
             )}
