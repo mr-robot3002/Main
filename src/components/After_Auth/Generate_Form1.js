@@ -26,7 +26,7 @@ export class Generation_Form1 extends React.Component {
           window.location.href = "/main/generate/provider"
         else if (e == 'Предприятие')
           window.location.href = "/main/generate/industry"
-      }.bind(this), 3000);
+      }.bind(this), 2000);
     }
 
     handleChange1 = event => {
